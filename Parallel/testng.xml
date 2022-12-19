@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+
+  <test thread-count="5" name="TestByChrome">
+  <parameter name="browsertype" value="chrome"></parameter>
+  <parameter name="firstname" value="manoj"></parameter>
+  <parameter name="lastname" value="vajpey"></parameter>
+    <classes>
+      <class name="ParallelOperation.ParallelTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="TestByFirefox">
+  <parameter name="browsertype" value="firefox"></parameter>
+  <parameter name="firstname" value="suchi"></parameter>
+  <parameter name="lastname" value="deshmukh"></parameter>
+    <classes>
+      <class name="ParallelOperation.ParallelTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  
+   <test thread-count="5" name="TestByEdge">
+  <parameter name="browsertype" value="edge"></parameter>
+  <parameter name="firstname" value="shree"></parameter>
+  <parameter name="lastname" value="deshmukh"></parameter>
+    <classes>
+      <class name="ParallelOperation.ParallelTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
